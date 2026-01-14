@@ -4,11 +4,59 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
-  <link rel="stylesheet" href="style.css">
+  <title>Form</title>
+  <style>
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav a{
+        text-decoration: none;
+        color: black;
+    }
+    .left{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+    .login-form{
+        border: 1px solid black;
+        padding: 20px;
+        margin: 40px;
+        width: 50%;
+    }
+    .login-form-container{
+        display: flex;
+        justify-content: center;
+    }
+    .fs{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+  </style>
 </head>
 <body>
-  
+  <nav>
+    <div class="left"><a href="">Home</a>
+    <a href="">Profile</a>
+    <a href="">Blog</a>
+    <a href="">About</a></div>
+    <a href="">Login</a>
+  </nav>
+
+<div class="login-form-container">
+<form class="login-form">
+    <fieldset class="fs">
+    <legend>Form</legend>
+    <h3>Please Login</h3>
+    <input type="email" name="" id="" placeholder="Your Email" required>
+    <input type="password" name="" id="" placeholder="Enter Password" >
+    <input type="submit" value="Login"></fieldset>
+</form></div>
+
   <script src="script.js"></script>
 </body>
 </html>
